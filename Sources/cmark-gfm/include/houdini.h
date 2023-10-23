@@ -1,10 +1,6 @@
 #ifndef CMARK_HOUDINI_H
 #define CMARK_HOUDINI_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include <stdint.h>
 #include "config.h"
 #include "buffer.h"
@@ -49,9 +45,5 @@ void houdini_unescape_html_f(cmark_strbuf *ob, const uint8_t *src,
 CMARK_GFM_EXPORT
 int houdini_escape_href(cmark_strbuf *ob, const uint8_t *src,
                                bufsize_t size);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif
