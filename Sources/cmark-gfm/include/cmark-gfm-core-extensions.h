@@ -1,10 +1,6 @@
 #ifndef CMARK_GFM_CORE_EXTENSIONS_H
 #define CMARK_GFM_CORE_EXTENSIONS_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "cmark-gfm-extension_api.h"
 #include "cmark-gfm-extensions_export.h"
 #include "config.h" // for bool
@@ -46,9 +42,5 @@ bool cmark_gfm_extensions_get_tasklist_item_checked(cmark_node *node);
  */
 CMARK_GFM_EXTENSIONS_EXPORT
 int cmark_gfm_extensions_set_tasklist_item_checked(cmark_node *node, bool is_checked);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

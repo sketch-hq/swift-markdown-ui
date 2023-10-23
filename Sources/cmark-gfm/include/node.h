@@ -1,10 +1,6 @@
 #ifndef CMARK_NODE_H
 #define CMARK_NODE_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include <stdio.h>
 #include <stdint.h>
 
@@ -117,9 +113,5 @@ static CMARK_INLINE bool CMARK_NODE_INLINE_P(cmark_node *node) {
 }
 
 CMARK_GFM_EXPORT bool cmark_node_can_contain_type(cmark_node *node, cmark_node_type child_type);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

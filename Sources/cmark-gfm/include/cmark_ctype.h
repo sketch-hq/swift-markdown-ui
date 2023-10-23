@@ -1,10 +1,6 @@
 #ifndef CMARK_CMARK_CTYPE_H
 #define CMARK_CMARK_CTYPE_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "cmark-gfm_export.h"
 
 /** Locale-independent versions of functions from ctype.h.
@@ -25,9 +21,5 @@ int cmark_isdigit(char c);
 
 CMARK_GFM_EXPORT
 int cmark_isalpha(char c);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

@@ -1,10 +1,6 @@
 #ifndef CMARK_GFM_EXTENSION_API_H
 #define CMARK_GFM_EXTENSION_API_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "cmark-gfm.h"
 
 struct cmark_renderer;
@@ -728,9 +724,5 @@ void cmark_arena_push(void);
 
 CMARK_GFM_EXPORT
 int cmark_arena_pop(void);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

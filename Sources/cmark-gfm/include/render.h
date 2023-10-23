@@ -1,10 +1,6 @@
 #ifndef CMARK_RENDER_H
 #define CMARK_RENDER_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include <stdlib.h>
 #include "buffer.h"
 #include "chunk.h"
@@ -54,9 +50,5 @@ char *cmark_render(cmark_mem *mem, cmark_node *root, int options, int width,
                    int (*render_node)(cmark_renderer *renderer,
                                       cmark_node *node,
                                       cmark_event_type ev_type, int options));
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif

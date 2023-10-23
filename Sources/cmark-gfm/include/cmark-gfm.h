@@ -6,10 +6,6 @@
 #include "cmark-gfm_export.h"
 #include "cmark-gfm_version.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /** # NAME
  *
  * **cmark-gfm** - CommonMark parsing, manipulating, and rendering
@@ -809,9 +805,5 @@ const char *cmark_version_string(void);
 #endif
 
 typedef int32_t bufsize_t;
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif
