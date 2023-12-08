@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.9
 
 import PackageDescription
 
@@ -23,8 +23,8 @@ let package = Package(
   targets: [
     .target(
       name: "cmark-gfm",
-      linkerSettings: [
-        .linkedLibrary("c++"),
+      swiftSettings: [
+        .interoperabilityMode(.Cxx),
       ]
     ),
     .target(
@@ -32,6 +32,9 @@ let package = Package(
       dependencies: [
         "cmark-gfm",
         .product(name: "NetworkImage", package: "NetworkImage"),
+      ],
+      swiftSettings: [
+        .interoperabilityMode(.Cxx),
       ]
     ),
     .testTarget(
@@ -44,3 +47,4 @@ let package = Package(
     ),
   ]
 )
+    
