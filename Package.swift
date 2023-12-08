@@ -32,9 +32,6 @@ let package = Package(
       dependencies: [
         "cmark-gfm",
         .product(name: "NetworkImage", package: "NetworkImage"),
-      ],
-      swiftSettings: [
-        .interoperabilityMode(.Cxx),
       ]
     ),
     .testTarget(
